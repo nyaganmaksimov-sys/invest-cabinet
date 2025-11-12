@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инвесторский дашборд | Название Вашей Компании</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Шапка */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 160px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logout-btn {
+            padding: 8px 16px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Приветственный блок */
+        .welcome-section {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .welcome-section h1 {
+            margin-top: 0;
+            font-weight: 500;
+        }
+
+        .welcome-section p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Сетка с информацией */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: #2980b9;
+            margin-top: 0;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 0.8rem;
+        }
+
+        .info-card ul {
+            padding-left: 1.2rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.7rem;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <img src="logo.png" alt="Логотип Компании" class="logo">
+            <div class="user-info">
+                <span>Добро пожаловать, Инвестор</span>
+                <a href="login.html" class="logout-btn">Выйти</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="welcome-section">
+            <h1>Добро пожаловать в закрытый инвесторский портал</h1>
+            <p>Здесь вы найдете актуальные финансовые отчеты, дорожные карты развития и ключевые метрики нашего проекта. Информация регулярно обновляется.</p>
+        </section>
+
+        <div class="info-grid">
+            <section class="info-card">
+                <h3>Финансовые показатели</h3>
+                <ul>
+                    <li><strong>Выручка (Q1 2024):</strong> $X.X млн</li>
+                    <li><strong>Чистая прибыль:</strong> $X.X млн</li>
+                    <li><strong>Рост выручки (г/г):</strong> XX%</li>
+                    <li><strong>Ключевые метрики (LTV, CAC, etc.):</strong> Доступны в детальном отчете.</li>
+                </ul>
+                <p><a href="#">Скачать полный финансовый отчет (PDF)</a></p>
+            </section>
+
+            <section class="info-card">
+                <h3>Презентации и Дорожные карты</h3>
+                <ul>
+                    <li><a href="#">Инвест-презентация (Обновлено: Апрель 2024)</a></li>
+                    <li><a href="#">Продуктовая дорожная карта на 2024-2025 гг.</a></li>
+                    <li><a href="#">Бизнес-план развития на следующий квартал</a></li>
+                </ul>
+            </section>
+
+            <section class="info-card">
+                <h3>Аналитика и Прогнозы</h3>
+                <ul>
+                    <li>Прогноз по рынку на 2024 год.</li>
+                    <li>Анализ конкурентной среды.</li>
+                    <li>Отчет по ключевым performance indicators (KPIs).</li>
+                </ul>
+                <p><a href="#">Перейти к интерактивным графикам</a></p>
+            </section>
+
+            <section class="info-card">
+                <h3>Юридические документы</h3>
+                <ul>
+                    <li><a href="#">Акционерное соглашение</a></li>
+                    <li><a href="#">Отчеты по аудиту</a></li>
+                    <li><a href="#">Юридическая структура компании</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Название Вашей Компании. Все права защищены. Конфиденциальная информация.</p>
+            <p>По всем вопросам обращайтесь: <a href="mailto:invest@yourcompany.com">invest@yourcompany.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Простая проверка аутентификации
+        if (!sessionStorage.getItem('authenticated')) {
+            // Если пользователь не входил, перенаправляем на страницу входа
+            window.location.href = 'login.html';
+        }
+
+        // Опционально: очистка sessionStorage при выходе уже происходит по ссылке "Выйти"
+        // Но можно добавить подтверждение
+        document.querySelector('.logout-btn').addEventListener('click', function() {
+            sessionStorage.removeItem('authenticated');
+            // Перенаправление произойдет по ссылке
+        });
+    </script>
+</body>
+</html>
